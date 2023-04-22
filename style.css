@@ -263,7 +263,7 @@ button.shuffle {
 }
 
 .songs .btns button.shuffle {
-  background-color: #ececec;
+  background: #ececec;
   color: #808080;
 }
 
@@ -389,6 +389,7 @@ button.shuffle {
 
 .small-player .details .track-artist {
   font-size: 0.7rem !important;
+  color: #9e9e9e !important;
 }
 
 .small-player .buttons {
