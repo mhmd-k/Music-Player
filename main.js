@@ -183,7 +183,7 @@ function seekUpdate() {
 function changeActiveSong() {
   document.querySelectorAll(".song-list li").forEach((li) => {
     li.classList.remove("active");
-    if (li.getAttribute("data-song") === songList[songIndex].name) {
+    if (parseInt(li.getAttribute("data-song")) === songIndex) {
       li.classList.add("active");
     }
   });
@@ -200,7 +200,7 @@ function setVolume() {
 
 function createItem(song, index) {
   const li = document.createElement("li");
-  li.setAttribute("data-song", song.name);
+  li.setAttribute("data-song", index);
   let active = index === songIndex ? "active" : null;
   const num = index + 1 > 9 ? index + 1 : `0${index + 1}`;
   li.innerHTML = `
