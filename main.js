@@ -246,7 +246,6 @@ playpauseBtn.forEach((e) => {
       pauseSong();
     } else {
       playSong();
-      updateTimer = setInterval(seekUpdate, 1000);
     }
   });
 });
